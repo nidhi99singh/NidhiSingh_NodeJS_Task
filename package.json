@@ -1,0 +1,24 @@
+{
+  "name": "nidhisingh_nodejs_task",
+  "version": "1.0.0",
+  "description": "hospital_management_system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nidhi Singh Panwar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  }
+}

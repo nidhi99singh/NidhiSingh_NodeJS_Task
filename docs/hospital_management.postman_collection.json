@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "8caac219-e7ff-4b6a-9aa1-5b92d424c6e8",
+		"name": "hospital_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19825953"
+	},
+	"item": [
+		{
+			"name": "getAllHospitals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/hospital/allHospitals",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"hospital",
+						"allHospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addHospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hospitalName\":\"Indira Gandhi Institute of Medical Sciences (IGIMS)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/hospital/addHospital",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"hospital",
+						"addHospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPsychiatrist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Kevin\",\r\n    \"lastName\":\"Kala\",\r\n    \"phoneNo\":756561265,\r\n    \"state\":\"Mumbai\",\r\n    \"pincode\":111116,\r\n    \"hospitalId\":\"683d8460-ef10-11ec-8761-09261dcd5c39\",\r\n    \"hospitalName\":\"Apollo Hospitals\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/psychiatrist/addPsyc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"psychiatrist",
+						"addPsyc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Rohan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "rohan",
+							"type": "text"
+						},
+						{
+							"key": "phoneNo",
+							"value": "691875706",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipur",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rohan",
+							"type": "text"
+						},
+						{
+							"key": "psycId",
+							"value": "f83d9270-ef11-11ec-87d4-2383b500ea94",
+							"type": "text"
+						},
+						{
+							"key": "fileSrc",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/Downloads/no-profile-picture-icon-6.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/patient/addPatient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patient",
+						"addPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ritiks",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Ritika@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ritika1234",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Raja Park, Mumbai",
+							"type": "text"
+						},
+						{
+							"key": "phoneNo",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "psycId",
+							"value": "f83d9270-ef11-11ec-87d4-2383b500ea94",
+							"type": "text"
+						},
+						{
+							"key": "file_src",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/Downloads/Girl.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/patient/addPatient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patient",
+						"addPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchPatientWithSinglePsyc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/patient/getPatient/\"75c35510-ef15-11ec-b66f-adcc51471e97\"",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patient",
+						"getPatient",
+						"\"75c35510-ef15-11ec-b66f-adcc51471e97\""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patientCount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/patient/getPatientCount",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patient",
+						"getPatientCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Atharv",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Athar@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Atharv123567",
+							"type": "text"
+						},
+						{
+							"key": "phoneNo",
+							"value": "8989898234",
+							"type": "text"
+						},
+						{
+							"key": "psycId",
+							"value": "34ffda90-ef14-11ec-b66f-adcc51471e97",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Sector 11, Punjab",
+							"type": "text"
+						},
+						{
+							"key": "fileSrc",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/Downloads/Girl.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/patient/addPatient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"patient",
+						"addPatient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
