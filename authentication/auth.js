@@ -12,10 +12,6 @@ function verifyToken(req, res, next) {
         console.log(payload)
 
         var decoded = jwtDecode(req.token)
-        //        var employeeRole = decoded.employeeRole
-        //      console.log(employeeRole)
-        //    req.employeeRole = employeeRole
-
         next()
     } else {
         res.sendStatus(403)

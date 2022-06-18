@@ -2,13 +2,7 @@ const verifyToken = require("./auth")
 
 const authPage = (permissions) => {
     return (req, res, next) => {
-
-        //const role = req.employeeRole
-
-        console.log({
-           /// role: req.employeeRole
-        })
-
+        
         if (permissions.includes(role)) {
             return next()
         } else {
