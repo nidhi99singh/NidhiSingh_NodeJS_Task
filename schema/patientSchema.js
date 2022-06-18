@@ -11,10 +11,6 @@ const patientSchema = [
     body('password').matches(/^(.*[a-z].*)$/).withMessage('password must have 1 lower case'),
     body('password').matches(/^(.*[A-Z].*)$/).withMessage('password must have 1 upper case'),
     body('password').matches(/^(.*\d.*)$/).withMessage('password must have 1 digit')
-
-    // body('password').isUppercase().withMessage('password must have 1 upper case'),
-    // body('password').isLowercase().withMessage('password must have 1 lower case'),
-    // body('password').isAlphanumeric().withMessage('password must have 1 number')
 ]
 
 module.exports = patientSchema

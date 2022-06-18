@@ -19,7 +19,6 @@ const storage = multer.diskStorage({
 const upload = multer({
     storage: storage
 })
-const up = multer()
 
 //add patient
 
