@@ -4,7 +4,7 @@ const con = require('./mysqlConnector')
 const multer = require('multer')
 const app = express()
 const PORT = 3000
-const expressValidator = require('express-validator')
+
 app.listen(PORT, () => {
     console.log(`server started on port : ${PORT}`)
 })

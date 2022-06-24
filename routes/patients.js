@@ -94,4 +94,18 @@ router.get('/getPatientCount', (req, res) => {
 
 })
 
+//get patient photo
+
+router.get('/patientImage/:id', (req, res) => {
+    const id = req.params.id
+    let query = 'select fileSrc from patient where patientId=' + id
+    con.query(query, (error, result) => {
+        if (error)
+            throw error
+        else {
+            res.sendFile('F:\\NodeJS\\NidhiSingh_NodeJS_Task\\src\\images\\' + result[0].fileSrc)
+        }
+    })
+})
+
 module.exports = router

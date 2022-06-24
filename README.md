@@ -112,7 +112,7 @@ The project contains 3 tables
 
 ``` 
 
-[GET] /api/patient/addPatient
+[POST] /api/patient/addPatient
 
 ```
 
@@ -144,6 +144,8 @@ The project contains 3 tables
 
  b) Fetch the count of how many patients are registered for each psychiatrist in a hospital. This should return, the hospital name, psychiatrist name and patient count.
 
+
+ c) fetch patient id by giving patient ID
 
 ## Documents Included
 
